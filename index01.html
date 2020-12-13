@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!--22061035 김채은-->
+<html lang="en" dir="ltr">
+  <head>
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+
+      body{
+        font-family: Arial;
+        padding: 10px;
+        background: #f1f1f1;
+      }
+
+      .header{
+        padding: 30px;
+        text-align: center;
+        background: white;
+      }
+
+      .header h1{
+        font-size: 50px;
+        font-family: 'Raleway Extrabold';
+      }
+
+      .header a{
+        color: black;
+        text-decoration: none;
+      }
+
+      .topnav{
+        overflow: hidden;
+        background-color: #002D62;
+      }
+
+      .selected{
+        background-color: #5D76A9;
+        color: white;
+        overflow: hidden;
+      }
+
+      .topnav a{
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        transition: 0.2s;
+      }
+
+      .topnav a:hover{
+        background-color: #B0C4DE;
+        color: #002244;
+      }
+
+      .leftcolumn{
+        float: left;
+        width: 75%;
+      }
+
+      .rightcolumn{
+        float: left;
+        width: 25%;
+        background-color: #f1f1f1;
+        padding-left: 20px;
+      }
+
+      .fakeimg{
+        background-color:#aaa;
+        width:100%;
+        padding: 20px;
+      }
+
+      .img{
+        width: 100%;
+      }
+
+      .card{
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 10px;
+      }
+
+      .card a{
+        text-decoration: none;
+        color: black;
+      }
+
+      .instagram a{
+        color: white;
+      }
+
+      .instagram {
+        text-decoration: none;
+        padding: 10px 20px 10px 20px;
+        width: 110px;
+        border-radius: 20px;
+        background-color: #F9629F;
+        transition: 0.2s;
+      }
+
+      .instagram:hover{
+        background-color: #FEBE10;
+      }
+
+      .korean{
+        font-family: 'AppleSDGothicNeoR00';
+      }
+
+      .bold_korean{
+        font-family: 'AppleSDGothicNeoB00';
+        font-weight: normal;
+        color: #005A9C;
+      }
+
+      .row:after{
+        content:"";
+        display: table;
+        clear: both;
+      }
+
+      .footer{
+        padding: 20px;
+        text-align: center;
+        background: #002D62;
+        margin-top: 20px;
+        font-size: 15px;
+        color: white;
+      }
+
+      @media screen and (max-width: 800px) {
+        .leftcolumn, .rightcolumn{
+          width: 100%;
+          padding: 0;
+        }
+      }
+
+      @media screen and (max-width: 400px) {
+        .topnav a {
+          float: none;
+          width: 100%;
+        }
+      }
+
+      @media screen and (max-width: 800px){
+        .img{
+          width: 100%;
+          padding: 0;
+        }
+      }
+    </style>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="header">
+      <h1><a href="./index.html">My Portfolio</a></h1>
+      <p>Welcome to my portfolio website.
+        <br>Resize the browser window to see the effect.</p>
+    </div>
+
+    <div class="topnav">
+      <a href="./index.html">Drawing</a>
+      <a href="./index01.html" class="selected">Designing</a>
+      <a href="./index02.html">Programming</a>
+      <a href="./index03.html" style="float:right">About</a>
+    </div>
+
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>ABSTRACT-EXPRESSIONISM CARD NEWS</h2>
+          <h5>Contents Design, Oct 21, 2020</h5>
+          <div><img src="./img/design01.png" class="img">
+          <img src="./img/design02.png" class="img"></div>
+          <p>Card news Design</p>
+          <p class="korean">추상적 표현주의를 소개하는 카드 뉴스를 디자인 했습니다.
+            추상적 표현주의를 효과적으로 드러내기 위해 강한 채도의 페인트 자국,
+            굵은 산세리프 체로 반항적인 느낌을 연출하였으며
+             추상적 표현주의의 토막식 정보들을 소개해 미술에 대한
+            지식이 전무한 사용자들의 호기심을 촉발하였습니다.</p>
+        </div>
+      </div>
+
+      <div class="rightcolumn">
+        <div class="card">
+          <h2><a href="./index03.html">About Me</a></h2>
+          <h3 class="bold_korean">김 채은</h3>
+          <p class="korean">매사에 진지하지만 좋아하는 일 만큼은 열정적입니다. 의견을 주장하기보단 경청하길 선호합니다.</p>
+        </div>
+
+        <div class="card">
+          <h3>Popular Post</h3>
+          <div><a href="./index01.html"><img src="./img/popular_post.png" class="img"></a></div>
+          <div><a href="./index.html"><img src="./img/popular_post2.png" class="img"></a></div>
+          <div><a href="./index02.html"><img src="./img/popular_post3.png" class="img"></a></div>
+        </div>
+
+        <div class="card">
+          <h3>Follow Me</h3>
+          <p class="instagram"><a href="https://www.instagram.com/1000_300_30_1/" target="_blank">Instagram</a></p>
+        </div>
+      </div>
+      </div> <!--class=row는 column 다음에 float 해제 시키는 css가 있으므로
+        footer 전에 float 해제를 css에 추가함-->
+
+    <div class="footer">
+      <div>
+        <p class="korean">전화: 010-5453-4914 | 경기도 의왕시 내손동 계원대학로 66 KR
+          <br>Copyright by 김채은 all rights Reserved.</p>
+      </div>
+    </div>
+
+  </body>
+</html>
